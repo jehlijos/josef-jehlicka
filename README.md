@@ -1,1 +1,0 @@
-# josef-jehlicka.github.io
