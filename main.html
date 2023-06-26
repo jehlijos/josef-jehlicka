@@ -3,7 +3,8 @@
 <head>
   <title>Josef Jehlička</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-  <style>
+ 
+<style>
     /* CSS styles can be added here */
     body {
       font-family: Arial, sans-serif;
@@ -31,220 +32,166 @@
     }
 
     nav {
-  position: relative;
-  z-index: 2;
-  background-color: #404040;
-  padding: 10px;
-  text-align: center;
-  margin-top: 00px; /* Move down by 350 pixels */
-}
+      position: relative;
+      z-index: 2;
+      background-color: #404040;
+      padding: 10px;
+      text-align: center;
+      margin-top: 00px; /* Move down by 350 pixels */
+    }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
 
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-  position: relative;
-}
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+      position: relative;
+    }
 
-nav ul li a {
-  display: block;
-  padding: 10px;
-  color: #E6133D;
-  font-weight: bold;
-  font-size: 130%; 
-  text-decoration: none;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
+    nav ul li a {
+      display: block;
+      padding: 10px;
+      color: #E6133D;
+      font-weight: bold;
+      font-size: 130%;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
 
-nav ul li:hover a {
-  color: #000000;
-  background-color: #E6133D;
-}
+    nav ul li:hover a {
+      color: #000000;
+      background-color: #E6133D;
+    }
 
-nav ul li:hover::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  background-color: #E6133D;
-  z-index: -1;
-}
-
+    nav ul li:hover::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      background-color: #E6133D;
+      z-index: -1;
+    }
 
     main {
       padding: 20px;
     }
 
-    footer {
+    footer {file:///C:/Users/pepik/Desktop/CREATIVE%20SHIT/website/profile.jpg
       background-color: #333;
       color: #fff;
       padding: 10px;
       text-align: center;
     }
 
-    .profile-image {
-      width: 150px;
-      height: 150px;
-      border-radius: 70%;
-      object-fit: cover;
-      position: absolute; /* Set position absolute for overlaying */
-      left: 50px; /* Adjust the left position as needed */
-      top: 500px; /* Move down by 350 pixels */
-      transform: translateY(-50%); /* Translate vertically to center */
-      transition: transform 0.7s ease-in-out; /* Add transition effect */
-	  z-index: 20;
-	   outline: 4px solid #fff;
-    }
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 70%;
+  object-fit: cover;
+  transition: transform 0.7s ease-in-out;
+  outline: 4px solid #fff;
+  position: absolute;
+  top: 54%;
+  left: 3%;
+  z-index: 20;
+}
 
-    .profile-image:hover {
-      transform: translateY(-50%) scale(1.25); /* Scale the image by 25% on hover */
-    }
+.profile-image:hover {
+  transform: scale(1.25);
+}
 
-    .full-width-image {
-      width: 100%;
-      height: auto;
-    }
-	
-	
-	
-	 .social-iconfb img {
-      width: 40px;
-      height: 40px;
-	  object-fit: cover;
-      position: absolute;
-      margin-right: 100px;
-	  z-index: 21;
-	  left: 1200px; /* Adjust the left position as needed */
-      top: 450px;
-      transition: transform 0.7s ease-in-out; /* Add transition effect */
-    }
+.full-width-image {
+  width: 100%;
+  height: auto;
+}
 
-    .social-iconfb img:hover {
-      transform: scale(1.25); /* Scale the image by 25% on hover */
-    }
-	
-	 .social-iconig img {
-      width: 40px;
-      height: 40px;
-	  object-fit: cover;
-      position: absolute;
-      margin-right: 100px;
-	  z-index: 21;
-	  left: 1250px; /* Adjust the left position as needed */
-      top: 450px;
-      transition: transform 0.7s ease-in-out; /* Add transition effect */
-    }
+.social-container {
+  position: absolute;
+  top: 67%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
 
-    .social-iconig img:hover {
-      transform: scale(1.25); /* Scale the image by 25% on hover */
-    }
-		 .social-icongh img {
-      width: 40px;
-      height: 40px;
-	  object-fit: cover;
-      position: absolute;
-      margin-right: 100px;
-	  z-index: 21;
-	  left: 1300px; /* Adjust the left position as needed */
-      top: 450px;
-      transition: transform 0.7s ease-in-out; /* Add transition effect */
-    }
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
 
-    .social-icongh img:hover {
-      transform: scale(1.25); /* Scale the image by 25% on hover */
-    }
-			 .social-iconwt img {
-      width: 40px;
-      height: 40px;
-	  object-fit: cover;
-      position: absolute;
-      margin-right: 100px;
-	  z-index: 21;
-	  left: 1350px; /* Adjust the left position as needed */
-      top: 450px;
-      transition: transform 0.7s ease-in-out; /* Add transition effect */
-    }
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.7s ease-in-out;
+}
 
-    .social-iconwt img:hover {
-      transform: scale(1.25); /* Scale the image by 25% on hover */
-    }
-			 .social-iconyt img {
-      width: 40px;
-      height: 40px;
-	  object-fit: cover;
-      position: absolute;
-      margin-right: 100px;
-	  z-index: 21;
-	  left: 1400px; /* Adjust the left position as needed */
-      top: 450px;
-      transition: transform 0.7s ease-in-out; /* Add transition effect */
-    }
+.social-icon img:hover {
+  transform: scale(1.25);
+}
 
-    .social-iconyt img:hover {
-      transform: scale(1.25); /* Scale the image by 25% on hover */
-    }
-			 .social-iconngl img {
-      width: 40px;
-      height: 40px;
-	  object-fit: cover;
-      position: absolute;
-      margin-right: 100px;
-	  z-index: 21;
-	  left: 1450px; /* Adjust the left position as needed */
-      top: 450px;
-      transition: transform 0.7s ease-in-out; /* Add transition effect */
-    }
 
-    .social-iconngl img:hover {
-      transform: scale(1.25); /* Scale the image by 25% on hover */
-    }
-	
+
   </style>
+  
+   <script src="percentage.js"></script>
+   <script src="percentage2.js"></script>
 </head>
 <body>
 
-<div class="social-iconfb">
-    <a href="https://www.facebook.com/josef.jehlicka.3/" target="_blank"><img src="fb.png" alt="Facebook"></a>
+<div class="social-container">
+  <div class="social-icon">
+    <a href="https://www.facebook.com/josef.jehlicka.3/" target="_blank">
+      <img src="fb.png" alt="Facebook">
+    </a>
   </div>
-<div class="social-iconig">
-   <a href="https://www.instagram.com/jehlickajosef/" target="_blank"> <img src="ig.png" alt="Instagram"> </a>
+  <div class="social-icon">
+    <a href="https://www.instagram.com/jehlickajosef/" target="_blank">
+      <img src="ig.png" alt="Instagram">
+    </a>
   </div>
-<div class="social-icongh">
-   <a href="https://github.com/jehlijos" target="_blank"> <img src="gh.png" alt="GitHub"> </a>
+  <div class="social-icon">
+    <a href="https://github.com/jehlijos" target="_blank">
+      <img src="gh.png" alt="GitHub">
+    </a>
   </div>
-<div class="social-iconwt">
-   <a href="https://www.wattpad.com/user/JosefJehlika" target="_blank"> <img src="wp.png" alt="Wattpad"> </a>
+  <div class="social-icon">
+    <a href="https://www.wattpad.com/user/JosefJehlika" target="_blank">
+      <img src="wp.png" alt="Wattpad">
+    </a>
   </div>
-<div class="social-iconyt">
-   <a href="https://www.youtube.com/channel/UC-F2iJsCwSPBOXR-OUgHX3w" target="_blank"> <img src="yt.png" alt="Youtube"> </a>
+  <div class="social-icon">
+    <a href="https://www.youtube.com/channel/UC-F2iJsCwSPBOXR-OUgHX3w" target="_blank">
+      <img src="yt.png" alt="Youtube">
+    </a>
   </div>
-<div class="social-iconngl">
-   <a href="https://ngl.link/jehlickajosef" target="_blank"> <img src="ngl.png" alt="NGL"> </a>
+  <div class="social-icon">
+    <a href="https://ngl.link/jehlickajosef" target="_blank">
+      <img src="ngl.png" alt="NGL">
+    </a>
   </div>
+</div>
 
+<img src="profile.jpg" class="profile-image" alt="Full-width image">
+<img src="baner.jpg" class="full-width-image" alt="Full-width image">
 
-
-
-
-  <img src="profile.jpg" class="profile-image" alt="Full-width image">
-  <img src="baner.jpg" class="full-width-image" alt="Full-width image">
-
-  <header>
-    <h1>Josef Jehlička</h1>
-    <nav>
-      <ul>
-        <li><a href="#">O mně</a></li>
-        <li><a href="#">Fotogalerie</a></li>
-        <li><a href="#">Blog</a></li>
-		<li><a href="#">Tvůrčí činnost</a></li>
-      </ul>
+<header>
+  <h1>Josef Jehlička</h1>
+  <nav>
+    <ul>
+      <li><a href="#">O mně</a></li>
+      <li><a href="#">Fotogalerie</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Tvůrčí činnost</a></li>
+      </ul>     
     </nav>
   </header>
 
@@ -258,3 +205,6 @@ nav ul li:hover::before {
   </footer>
 </body>
 </html>
+
+
+ 
