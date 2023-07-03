@@ -60,7 +60,7 @@ nav ul li a {
   padding: 10px;
   color: #E6133D;
   font-weight: bold;
-  font-size: 130%;
+  font-size: 150%;
   text-decoration: none;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
@@ -83,7 +83,7 @@ nav ul li:hover::before {
 
 main {
   padding: 40px;
-  margin-top: 100px; /* Add 40 pixels of white space below */
+  margin-top: 250px; /* Add 40 pixels of white space below */
 }
 
 footer {
@@ -119,7 +119,7 @@ footer {
   position: absolute;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
+  grid-gap: 40px;
   justify-content: center;
   align-items: flex-start;
   left: 50%;
