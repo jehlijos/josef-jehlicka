@@ -83,7 +83,8 @@ nav ul li:hover::before {
 
 main {
   padding: 40px;
-  margin-top: 250px; /* Add 40 pixels of white space below */
+  margin-top: 250px; 
+  font-size: 150%;
 }
 
 footer {
