@@ -89,7 +89,7 @@ nav ul li:hover::before {
 main {
   padding: 40px;
   margin-top: 250px; 
-  font-size: 150%;
+  font-size: 105%;
 }
 
 footer {
@@ -97,7 +97,7 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
-   font-size: 130%;
+   font-size: 100%;
 }
 
 .profile-image {
