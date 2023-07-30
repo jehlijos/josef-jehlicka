@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>wattpad</title>
+  <script>
+    window.onload = function() {
+      var count = 8;
+      var countdown = document.getElementById('countdown');
+      
+      var interval = setInterval(function() {
+        countdown.innerHTML = count;
+        count--;
+        
+        if (count < 0) {
+          clearInterval(interval);
+          window.location.href = 'https://www.wattpad.com/user/JosefJehlika';
+        }
+      }, 1000);
+    };
+  </script>
+</head>
+<body>
+  <h1>Varování! </h1>
+  <p> Mé texty na Wattpadu obsahují často některá nevhodná témata s užítím nadsázky.</p> 
+  <p> Doufám, že mě kvůli tomu neodsoudíte :) </p><br>
+  <p> Přesměrování za <span id="countdown">8</span> sekund ... </p>
+</body>
+</html>
