@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-function displayModal(dataURL, title) {
+function displayModal(text, title) {
     const modal = document.createElement("div");
     modal.classList.add("modal");
 
@@ -173,13 +173,7 @@ function displayModal(dataURL, title) {
     titleElement.textContent = title;
 
     const textElement = document.createElement("p");
-    textElement.textContent = "Loading text...";
-	
-	  const reader = new FileReader();
-    reader.onload = function() {
-        textElement.textContent = reader.result;
-    };
-    reader.readAsText(dataURL);
+    textElement.textContent = text;
 
     content.appendChild(closeButton);
     content.appendChild(titleElement);
