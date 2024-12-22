@@ -104,4 +104,45 @@
   </main>
 
   <footer>
-    email: jehlijos@proton.me  ,  tel.: 777 689 873 /  778 039 151 &nbsp
+    email: jehlijos@proton.me  ,  tel.: 777 689 873 /  778 039 151 &nbsp;
+    <br>     
+    <p>2024 © Josef Jehlička</p>
+  </footer>
+
+  <!-- Three.js Script -->
+  <script>
+    // Set up the scene
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('model-container').appendChild(renderer.domElement);
+
+    // Add orbit controls
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+    // Set up the lighting
+    const light = new THREE.AmbientLight(0x404040, 1); // Ambient light
+    scene.add(light);
+
+    // Load GLTF model
+    const loader = new THREE.GLTFLoader();
+    loader.load('model.glb', function(gltf) {
+      scene.add(gltf.scene);
+      gltf.scene.scale.set(1, 1, 1); // Scale the model as needed
+      gltf.scene.position.set(0, 0, 0); // Position the model
+    });
+
+    // Set the camera position
+    camera.position.z = 5;
+
+    // Animation loop
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>
