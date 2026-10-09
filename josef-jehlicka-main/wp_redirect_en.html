@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>wattpad</title>
+  <script>
+    window.onload = function() {
+      var count = 8;
+      var countdown = document.getElementById('countdown');
+      
+      var interval = setInterval(function() {
+        countdown.innerHTML = count;
+        count--;
+        
+        if (count < 0) {
+          clearInterval(interval);
+          window.location.href = 'https://www.wattpad.com/user/JosefJehlika';
+        }
+      }, 1000);
+    };
+  </script>
+</head>
+<body>
+  <h1>Warning! </h1>
+<p>My stories on Wattpad often contain certain inappropriate topics with a touch of exaggeration.</p>
+<p>I hope you won't judge me because of that :)</p><br>
+<p>Redirecting in <span id="countdown">8</span> seconds...</p>
+</body>
+</html>

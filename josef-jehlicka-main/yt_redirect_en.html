@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>youtube</title>
+  <script>
+    window.onload = function() {
+      var count = 8;
+      var countdown = document.getElementById('countdown');
+      
+      var interval = setInterval(function() {
+        countdown.innerHTML = count;
+        count--;
+        
+        if (count < 0) {
+          clearInterval(interval);
+          window.location.href = 'https://www.youtube.com/channel/UC-F2iJsCwSPBOXR-OUgHX3w';
+        }
+      }, 1000);
+    };
+  </script>
+</head>
+<body>
+  <h1>Warning! </h1>
+  <p>My YouTube videos feature a really simple humor often accompanied by alcohol.</p>
+  <p>I hope you won't judge me because of that :)</p>
+  <p> And it is all in Czech. <p> <br>
+<p>Redirecting in <span id="countdown">8</span> seconds...</p>
+</body>
+</html>
